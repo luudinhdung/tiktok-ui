@@ -1,0 +1,48 @@
+.body-home {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+}
+
+.wrapper {
+    margin: 0 16px;
+    padding: 24px 0;
+    display: flex;
+    scroll-snap-align: start;
+}
+.avatar {
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+}
+.info-video {
+    margin-left: 12px;
+    scroll-snap-align: start;
+}
+.name-chanel {
+    font-family: SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    display: inline-block;
+    margin-right: 4px;
+}
+.creater-content {
+    font-weight: 600;
+    color: rgb(22, 24, 35);
+}
+.content-video {
+    font-weight: 400;
+}
+.orginal-music {
+    color: rgb(22, 24, 35);
+    transition: color 250ms ease 0s;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}

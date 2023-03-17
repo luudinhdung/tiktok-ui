@@ -1,0 +1,465 @@
+.upload-container {
+    background-color: rgb(248, 248, 248);
+    margin-top: 50px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.inner-upload {
+    width: 1100px;
+    height: 1021px;
+    box-shadow: rgb(0 0 0 / 6%) 0px 2px 8px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    padding: 24px 40px;
+    margin-top: 20px;
+}
+
+.title-upload {
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+}
+
+.title-desc {
+    font-size: 2.1rem;
+    color: rgba(22, 24, 35, 0.5);
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.content-upload {
+    display: flex;
+    margin-top: 24px;
+}
+.input-file {
+    display: none;
+}
+.select-file-parent {
+    width: 260px;
+    height: 458px;
+    border: 3px dashed rgba(22, 24, 35, 0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    &:hover {
+        border-color: var(--primary);
+    }
+}
+.select-file-children {
+    padding: 0 0px;
+}
+
+.select-file-children__content {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+.icon {
+    width: 44px;
+    height: 35px;
+    opacity: 0.5;
+}
+.title {
+    margin-top: 24px;
+    line-height: 1.5;
+    font-size: 1.8rem;
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 1);
+}
+.action {
+    margin: 4px 0 24px 0;
+    font-size: 1.4rem;
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 400;
+    color: rgba(22, 24, 35, 0.5);
+}
+.option {
+    margin-bottom: 6px;
+    font-size: 1.4rem;
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 400;
+    color: rgba(22, 24, 35, 0.5);
+}
+.size-video {
+    margin-bottom: 6px;
+    font-size: 1.4rem;
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 400;
+    color: rgba(22, 24, 35, 0.5);
+}
+.duration {
+    margin-bottom: 6px;
+    font-size: 1.4rem;
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 400;
+    color: rgba(22, 24, 35, 0.5);
+}
+.size-file {
+    font-size: 1.4rem;
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 400;
+    color: rgba(22, 24, 35, 0.5);
+}
+.btn-chose-file {
+    display: flex;
+    margin-top: 32px;
+    width: 100%;
+    background-color: var(--primary);
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 1);
+    height: 36px;
+    padding: 0 35px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+
+// Edit
+.info-video {
+    margin-left: 24px;
+    flex: 1;
+}
+
+.edit {
+    position: relative;
+    display: flex;
+    background-color: rgba(22, 24, 35, 0.03);
+    border-radius: 2px;
+    height: 104px;
+    margin-bottom: 24px;
+
+    button {
+        position: absolute;
+        width: 96px;
+        height: 36px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 5%;
+    }
+}
+.icon-edit {
+    width: 34px;
+    height: 20px;
+    margin-right: 15px;
+    margin-top: 17px;
+    margin-left: 20px;
+}
+.wrap {
+    margin-top: 15px;
+    width: 496px;
+    .title-edit {
+        font-family: proxima-semibold, Arial, Tahoma, PingFangSC, sans-serif, 'Segoe UI Emoji', 'Noto Emoji';
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 24px;
+        font-style: normal;
+    }
+    span {
+        color: rgba(22, 24, 35, 0.75);
+        font-family: proxima-regular, Arial, Tahoma, PingFangSC, sans-serif, 'Segoe UI Emoji', 'Noto Emoji';
+        font-weight: 400;
+        opacity: 0.75;
+        font-size: 1.6rem;
+        line-height: 22px;
+        font-style: normal;
+    }
+}
+
+// Input
+.caption-wrap {
+    position: relative;
+}
+.caption-input {
+    width: 734px;
+    height: 42px;
+    padding: 2px;
+    border: 1px solid rgba(22, 24, 35, 0.4);
+}
+.suggest-parent {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+.suggest {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.clear {
+    position: relative;
+    font-weight: 800;
+    font-size: 1.9rem;
+    right: -31px;
+    top: 2px;
+    cursor: pointer;
+}
+.search-icon {
+    position: relative;
+    right: 679px;
+    top: 2px;
+    cursor: pointer;
+}
+.wrapper-suggest {
+    margin-bottom: -7px;
+    width: 734px;
+    height: 241px;
+    overflow: hidden;
+}
+//Cover
+
+.cover {
+    position: relative;
+    margin-top: 24px;
+}
+
+.input-cover {
+    width: 734px;
+    height: 168px;
+    border: 1px solid rgba(22, 24, 35, 0.4);
+    pointer-events: none;
+    padding: 6px;
+}
+.inner-input-cover {
+    position: absolute;
+    background-color: rgba(22, 24, 35, 0.03);
+    width: 85.75px;
+    height: 150px;
+    object-fit: cover;
+    top: 36px;
+    left: 10px;
+}
+
+// Options
+
+.options-video {
+    margin-top: 24px;
+}
+.title-options {
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: proxima-semibold, Arial, Tahoma, PingFangSC, sans-serif, 'Segoe UI Emoji', 'Noto Emoji';
+    margin-bottom: 4px;
+    color: rgba(22, 24, 35, 1);
+}
+
+.select-option {
+    display: flex;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    background: rgb(255, 255, 255);
+    height: 36px;
+    width: 300px;
+    align-items: center;
+}
+.option-selected {
+    cursor: pointer;
+    flex: 1;
+    color: rgb(22, 24, 35);
+    height: 22px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.icon-down {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 14px;
+    height: 14px;
+}
+.icon-up {
+    margin-right: 10px;
+    margin-bottom: -6px;
+    width: 14px;
+    height: 14px;
+}
+.options-list {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: linear showList 0.25s;
+}
+
+.options-item {
+    cursor: pointer;
+    display: block;
+    height: 22px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 100%;
+    color: rgba(22, 24, 35, 1);
+}
+@keyframes showList {
+    from {
+        height: 0;
+    }
+    to {
+        height: 126.62px;
+    }
+}
+
+.active {
+    background-color: rgba(22, 24, 35, 0.03);
+}
+//Check
+.check {
+    margin-top: 24px;
+    h3 {
+        margin-bottom: 4px;
+    }
+}
+.input-check {
+    display: flex;
+    h4 {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+}
+
+.input-check {
+    input[type='checkbox'] {
+        position: relative;
+        cursor: pointer;
+    }
+    input[type='checkbox']:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid rgba(22, 24, 35, 0.45);
+    }
+    input[type='checkbox']:checked:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        top: 0;
+        left: 0;
+        background-color: var(--primary);
+    }
+    input[type='checkbox']:checked:after {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 8px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 2px;
+        left: 5px;
+    }
+}
+//Button
+.button {
+    margin-top: 24px;
+}
+.btn-discard {
+    margin-right: 20px;
+    border-radius: 2px;
+    width: 164px;
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    color: rgba(22, 24, 35, 1);
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    background-color: rgba(255, 255, 255, 1);
+
+    &:hover {
+        background-color: rgba(245, 245, 245, 1);
+        border-color: rgba(22, 24, 35, 0.2);
+    }
+}
+
+.button:last-child {
+    cursor: no-drop;
+}
+//Footer
+.footer {
+    margin-top: 24px;
+    width: 100vw;
+    height: 356px;
+    color: #fff;
+    background: #000;
+    padding-bottom: 24px;
+}
+
+.wrap-item {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-around;
+
+    h5 {
+        line-height: 1.9;
+        cursor: pointer;
+        color: #ccc;
+        font-family: 'sofiapro-medium', Arial, Tahoma, PingFangSC, sans-serif, 'Segoe UI Emoji', 'Noto Emoji';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+        position: relative;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    h4 {
+        font-size: 14px;
+        line-height: 28px;
+        font-family: 'sofiapro-bold', Arial, Tahoma, PingFangSC, sans-serif, 'Segoe UI Emoji', 'Noto Emoji';
+        font-weight: 700;
+        color: #fff;
+    }
+}
+
+.footer-langues {
+    margin-top: 60px;
+    display: flex;
+    padding: 0 114px;
+    justify-content: space-between;
+}
+
+.options-list-footer {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.select-option-footer {
+    width: 170px;
+    display: flex;
+    border: 1px solid #8a8b91;
+    height: 36px;
+    width: 170px;
+    align-items: center;
+    background: transparent;
+    justify-content: space-between;
+}
+.option-selected-footer {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.hastag {
+    font-family: 'sofiapro-medium', Arial, Tahoma, PingFangSC, sans-serif, 'Segoe UI Emoji', 'Noto Emoji';
+    font-weight: 500;
+    font-size: 14px;
+    color: #8a8b91;
+}

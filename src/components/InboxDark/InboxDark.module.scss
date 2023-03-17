@@ -1,0 +1,85 @@
+.wrapInbox {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapHeader {
+    padding: 24px 0 0 16px;
+
+    h2 {
+        display: flex;
+        justify-content: flex-start;
+        color: rgb(22, 24, 35);
+        font-family: SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+        font-weight: 800;
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        margin-left: 5px;
+    }
+}
+.active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .btn {
+        margin-top: 10px;
+        margin-left: 5px;
+        color: rgb(22, 24, 35);
+        border-radius: 999px;
+        cursor: pointer;
+        transition: all 300ms ease 0s;
+        &:hover {
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.12);
+        }
+    }
+}
+
+body {
+    .activeBtn {
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}
+
+.wrap-member {
+    display: flex;
+    flex-direction: column;
+}
+
+.previous {
+    display: flex;
+    justify-content: flex-start;
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 5px;
+    line-height: 20px;
+    padding: 0px 16px;
+    margin-top: 8px;
+    padding: 0 16px;
+}
+
+.info-acount {
+    position: relative;
+    &:hover {
+        background-color: rgba(44, 48, 70, 0.25);
+    }
+}
+.btn-follow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.friends {
+    color: rgb(22, 24, 35);
+    border-color: rgba(22, 24, 35, 0.12);
+    background-color: rgb(255, 255, 255);
+}

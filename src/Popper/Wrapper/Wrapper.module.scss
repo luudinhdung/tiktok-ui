@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: min((100vh - 96px) - 60px, 734px);
+    border-radius: 8px;
+    margin-top: 8px;
+    padding-top: 8px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
+    min-height: 100px;
+}
+.menu-popper {
+    padding-bottom: 8px;
+}
+.update {
+    margin-top: -7px;
+    display: flex;
+    flex-direction: column;
+}
+.options {
+    width: 300px;
+    margin-top: -5px;
+}
+.options-footer {
+    width: 170px;
+}
+
+.darkBox {
+    width: 376px;
+    height: 100%;
+    overflow-y: auto;
+}

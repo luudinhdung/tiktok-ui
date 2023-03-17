@@ -1,0 +1,41 @@
+.menu-list {
+    width: 224px;
+    .menu-item {
+        margin-left: 0;
+        padding: 10px 15px;
+    }
+}
+
+.menu-item {
+    justify-content: flex-start;
+    width: 100%;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+    &.separate {
+        border-top: 1px solid rgba(22, 24, 35, 0.12);
+    }
+}
+.menu-body {
+    overflow-y: auto;
+}
+.header {
+    position: relative;
+    flex-shrink: 0;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.back-btn {
+    width: 50px;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
